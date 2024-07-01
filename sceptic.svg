@@ -1,0 +1,9 @@
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Circle for the face -->
+        <circle cx="100" cy="100" r="100" fill="#f7d62f"/>
+        <!-- Eyes -->
+        <circle cx="60" cy="80" r="20" fill="#c49752"/> <!-- Lighter brown color -->
+        <circle cx="140" cy="80" r="20" fill="#c49752"/> <!-- Lighter brown color -->
+        <!-- Mouth -->
+        <rect x="45" y="130" width="110" height="10" fill="#cfb42d" rx="5" ry="5"/> <!-- Longer mouth with rounded corners and yellow shade -->
+    </svg>
