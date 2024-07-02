@@ -1,6 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Убираем стандартные отступы */
+    margin: 0; 
+}
+
+
+header, footer {
+    width: 100%; 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 135px;
+    position: relative; 
+}
+
+header::after, footer::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.container {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 header {
@@ -11,7 +41,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     padding-left: 135px;
-    margin: 0 auto; /* Центрируем хедер */
+    margin: 0 auto; 
     position: relative; /* Устанавливаем относительное позиционирование для хедера */
 }
 
@@ -20,7 +50,7 @@ header::after {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #ccc; /* Светло-серый цвет */
+    background-color: #ccc; 
     position: absolute;
     bottom: 0;
     left: 0;
@@ -33,22 +63,22 @@ header::after {
 
 #services {
     margin-bottom: 100px;
-    gap: 2px; /* Уменьшили пробел между секциями до 2px */
+    gap: 2px; 
 }
 
 .service-box {
-    width: 220px; /* Фиксированная ширина */
-    height: 170px; /* Фиксированная высота */
-    padding: 20px; /* Внутренние отступы */
-    margin: 20px; /* Отступы между коробками */
+    width: 220px; 
+    height: 170px; 
+    padding: 20px; 
+    margin: 20px; 
     text-align: left;
-    border-radius: 10px; /* Закругленные углы */
-    border: 1px solid #00BFFF; /* Цвет рамки */
-    background-color: #ffffff; /* Белый фон */
+    border-radius: 10px; 
+    border: 1px solid #00BFFF; 
+    background-color: #ffffff; 
     transition: background-color 0.3s, border-color 0.3s;
-    display: inline-block; /* Размещаем коробки в один ряд */
-    vertical-align: top; /* Выравнивание по верху */
-    position: relative; /* Для позиционирования иконок */
+    display: inline-block; 
+    vertical-align: top;
+    position: relative;
     margin-left: 140px;
     
 
@@ -93,6 +123,7 @@ header::after {
 
 .service-box h4, .service-box p, .service-box a {
     color: #16133D; /* Основной текст темного цвета */
+    font-weight: normal;
 }
 
 .service-box a {
@@ -132,7 +163,7 @@ header::after {
 
 footer {
     background-color: rgba(22, 19, 61, 1);
-    width: 1470px;
+    width: 1430px;
     height: 130px;
     display: flex;
     align-items: center;
