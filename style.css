@@ -1,8 +1,8 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0; 
 }
-
 
 header, footer {
     width: 100%; 
@@ -26,7 +26,6 @@ header::after, footer::after {
     left: 0;
 }
 
-
 .container {
     max-width: 1440px; 
     margin: 0 auto; 
@@ -42,7 +41,7 @@ header {
     justify-content: flex-start;
     padding-left: 135px;
     margin: 0 auto; 
-    position: relative; /* Устанавливаем относительное позиционирование для хедера */
+    position: relative; 
 }
 
 header::after {
@@ -92,33 +91,31 @@ header::after {
 }
 
 .service-box:hover {
-    border-color: rgba(61, 179, 112, 1); /* Зеленый цвет рамки при наведении */
+    border-color: rgba(61, 179, 112, 1); 
 }
 
-/* Стили для иконок */
 .service-icon {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 0; /* Позиционирование иконок */
+    top: 0; 
     left: 0;
-    transition: opacity 0.3s; /* Плавный переход для изменения видимости */
+    transition: opacity 0.3s; 
     margin-left: 20px;
     margin-top: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Практически невидимая рамка */
-    border-radius: 10%; /* Закругленные углы */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10%; 
 
 }
 
 .blue-icon {
-    opacity: 1; /* Голубые иконки видны по умолчанию */
+    opacity: 1;
 }
 
 .green-icon {
-    opacity: 0; /* Зеленые иконки скрыты по умолчанию */
+    opacity: 0; 
 }
 
-/* При наведении на коробку, скрываем голубую иконку и показываем зеленую */
 .service-box:hover .blue-icon {
     opacity: 0;
 }
@@ -128,7 +125,7 @@ header::after {
 }
 
 .service-box h4, .service-box a {
-    color: #16133D; /* Основной текст темного цвета */
+    color: #16133D; 
     font-weight: normal;
     margin-top: 50px;
     
@@ -142,7 +139,7 @@ header::after {
 }
 
 .service-box a {
-    color: rgba(61, 179, 112, 1); /* Ссылка зеленого цвета */
+    color: rgba(61, 179, 112, 1); 
     text-decoration: none;
     transition: color 0.3s;     
 }
@@ -183,23 +180,41 @@ footer {
     display: flex;
     align-items: center;
     padding: 0 50px;
-    opacity: 1; /* Убедимся, что футер виден */
+    opacity: 1;
 }
-
-
 
 .footer-logo {
     margin-left: 95px;
     height: 35px;
 }
 
-.social-icon img {
+.social-icon {
+    display: flex;
     margin-left: 95px;
-    margin-top: 30px;
+}
 
+.social-icon .icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+    margin-right: 10px;
+    fill: #d3d3d3; 
+    transition: fill 0.3s;
+}
+
+.social-icon .icon:hover {
+    fill: #00BFFF; 
+  
 }
 
 .additional-image {
-    width: auto; /* или конкретную ширину, если нужно */
-    height: 35px; /* высота, чтобы соответствовать лого, если необходимо */
+    width: auto;
+    height: 35px;
 }
+
+.additional-image {
+    width: auto;
+    height: 35px; 
+}
+
+
