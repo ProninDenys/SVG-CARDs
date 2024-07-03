@@ -88,6 +88,7 @@ header::after {
     position: relative;
     width: 50px;
     height: 50px;
+    
 }
 
 .service-box:hover {
@@ -96,12 +97,17 @@ header::after {
 
 /* Стили для иконок */
 .service-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 0; /* Позиционирование иконок */
     left: 0;
     transition: opacity 0.3s; /* Плавный переход для изменения видимости */
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Практически невидимая рамка */
+    border-radius: 10%; /* Закругленные углы */
+
 }
 
 .blue-icon {
@@ -121,15 +127,24 @@ header::after {
     opacity: 1;
 }
 
-.service-box h4, .service-box p, .service-box a {
+.service-box h4, .service-box a {
     color: #16133D; /* Основной текст темного цвета */
     font-weight: normal;
+    margin-top: 50px;
+    
+}
+
+.service-box p {
+    margin-top: 30px;
+    line-height: 28px;
+    font-size: 16px;
+
 }
 
 .service-box a {
     color: rgba(61, 179, 112, 1); /* Ссылка зеленого цвета */
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s;     
 }
 
 .service-box a:hover {
@@ -163,46 +178,25 @@ header::after {
 
 footer {
     background-color: rgba(22, 19, 61, 1);
-    width: 1430px;
-    height: 130px;
+    width: 1350px;
+    height: 170px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 50px;
     opacity: 1; /* Убедимся, что футер виден */
 }
 
-.footer-logo-container {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    margin-bottom: 50px;
-    padding-top: 10px;
-}
+
 
 .footer-logo {
     margin-left: 95px;
     height: 35px;
 }
 
-.footer-text {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
-    color: white;
-    width: 157px;
-    top: -0.5px;
-    left: 43.62px;
-    margin-left: -150px;
-}
-
-.social-icon {
-    display: flex;
-    gap: 10px;
-    width: 30px; /* Укажите размер, подходящий для ваших иконок */
-    height: 30px;
-    opacity: 1; /* Убедитесь, что элемент полностью виден */
-    border: 2px solid rgb(255, 255, 255);
+.social-icon img {
     margin-left: 95px;
+    margin-top: 30px;
+
 }
 
 .additional-image {
